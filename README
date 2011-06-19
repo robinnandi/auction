@@ -1,0 +1,40 @@
+Auction README
+==============
+
+What it is
+==========
+
+Rules for the allocation of rooms in rented accommodation by auction. The number
+of tenants is fixed and equal to the number of rooms and there is a fixed total 
+monthly rent.
+
+Rules
+=====
+
+- The rooms start off at equal monthly rent.
+
+- The tenants bid for the rooms by offering to pay a higher monthly rent.
+
+- Each tenant may bid for only one room at a time.
+
+- The rent for the other rooms is adjusted down such that the total monthly rent
+  remains the same and the rents for other rooms remain in the same proportions.
+
+Code
+====
+
+The code is php. It can be uploaded directly to a web server.
+
+README           # description
+index.php        # main page - displays bidding and contains form to submit bid
+bids.txt         # a text file containing the bidding
+initialize.php   # a script to initialize bids.txt
+show_array.php   # a function to display the bidding in a html table
+validate_bid.php # a funtion to validate the bid
+process_bid.php  # a function to process the bid and update bids.txt accordingly
+photos/          # put photos of the rooms here
+  room_0.html
+  room_1.html
+  room_2.html
+  room_3.html
+  room_4.html
