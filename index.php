@@ -25,6 +25,8 @@ include("process_bid.php");
 $filename = "bids.txt";
 $bids = unserialize( file_get_contents($filename) );
 show_array($bids);
+echo "<br/>";
+echo "<br/>";
 
 $errors = array();
 if (!empty($_POST['Submit'])) {
@@ -48,9 +50,6 @@ echo $error_str;
 }
 
 ?>
-
-<br/>
-<br/>
 
 <form method="post" action="<?php echo $PHP_SELF ?>">
 <p>
