@@ -6,7 +6,7 @@ function validate_bid($name, $room, $bid) {
   $filename = "bids.txt";
   $bids = unserialize( file_get_contents($filename) );
   # Verify information submited
-  $name_recognized = in_array( $name, array( "Alex", "Arlo", "Mike", "Paul", "Robin" ) ) 
+  $name_recognized = in_array( $name, array( "Alex", "Arlo", "Mike", "Paul", "Robin" ) ); 
   $name_used = in_array( $name, $bids["Current Bidder"]);
   if ( !$name_recognized ) {
     $errors["name"] = "Name not recognised. Must be Alex, Arlo, Mike, Paul or Robin."; 
